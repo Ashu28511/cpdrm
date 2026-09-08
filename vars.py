@@ -13,7 +13,7 @@ CREDIT = environ.get("CREDIT", "")
 TOTAL_USER = os.environ.get('TOTAL_USERS', '100').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
-AUTH_USER = os.environ.get('AUTH_USERS', '').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '1').split('1,2')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
