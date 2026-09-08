@@ -10,7 +10,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 OWNER = int(environ.get("OWNER", "27546285"))
 CREDIT = environ.get("CREDIT", "")
 
-TOTAL_USER = os.environ.get('TOTAL_USERS', '').split(',')
+TOTAL_USER = os.environ.get('TOTAL_USERS', '100').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
 AUTH_USER = os.environ.get('AUTH_USERS', '').split(',')
